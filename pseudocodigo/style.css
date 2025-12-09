@@ -1,162 +1,117 @@
-/* === PALETA DRAGON BALL === */
-:root {
-    --db-orange: #ff8c00;
-    --db-yellow: #ffd600;
-    --db-blue-dark: #001f3f;
-    --db-blue: #0066cc;
-    --db-black: #0a0a0a;
-    --white: #ffffff;
-}
-
-/* === BASE === */
+/* ESTILOS GENERALES */
 body {
-    margin: 0;
-    font-family: "Poppins", Arial, sans-serif;
-    background: radial-gradient(circle at top, #0e0e0e 0%, #000000 100%);
-    color: var(--white);
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    line-height: 1.6;
 }
 
-/* TITULOS */
-h2 {
-    color: var(--db-yellow);
-    text-shadow: 0 0 10px var(--db-yellow);
-}
-
-/* === HEADER ESTILO DRAGON BALL === */
-.db-header {
-    position: relative;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("img/db_header.webp");
-    background-size: cover;
-    background-position: center;
-    color: var(--white);
-}
-
-.db-header .overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, .6);
-}
-
-.db-header h1 {
-    position: relative;
-    font-size: 3.8rem;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    text-shadow: 0 0 15px var(--db-orange), 0 0 25px var(--db-yellow);
-    z-index: 2;
-}
-
-/* === INTRO === */
-.intro {
+header {
     text-align: center;
-    padding: 20px 30px;
-    font-size: 1.1rem;
-    color: #e0e0e0;
+    margin-bottom: 40px;
 }
 
-/* === GALERÍA === */
-.gallery {
-    padding: 50px 20px;
-}
-
-.grid-gallery {
-    display: grid;
-    gap: 25px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    justify-items: center;
-}
-
-/* Tarjetas de imagen */
-.item {
-    background: rgba(255, 255, 255, 0.05);
-    border: 2px solid transparent;
-    border-radius: 15px;
-    padding: 12px;
-    transition: .3s ease;
-    box-shadow: 0 0 10px rgba(255, 140, 0, 0.1);
-}
-
-.item:hover {
-    transform: translateY(-8px) scale(1.04);
-    border-color: var(--db-orange);
-    box-shadow: 0 0 18px var(--db-orange);
-}
-
-.item img {
-    width: 100%;
-    aspect-ratio: 9 / 12;
-    object-fit: contain;
-    background: #111;
+.actividad {
+    background: white;
+    padding: 20px;
     border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
-.item h3 {
-    margin: 8px 0 3px;
-    font-size: 1.05rem;
-    color: var(--db-yellow);
-    text-shadow: 0 0 6px var(--db-orange);
-}
-
-.item p {
-    color: #ccc;
-    font-size: .85rem;
-    margin-bottom: 4px;
-}
-
-/* === LIGHTBOX === */
-.lightbox {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,.92);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: .3s ease;
-}
-
-.lightbox.visible {
-    opacity: 1;
-    visibility: visible;
-}
-
-.lb-close {
-    position: absolute;
-    top: 12px;
-    right: 18px;
-    font-size: 2rem;
-    background: none;
-    color: var(--db-yellow);
+/* ACTIVIDAD 1 */
+.btn {
+    padding: 10px 20px;
+    margin-right: 10px;
     border: none;
+    background-color: #ddd;
     cursor: pointer;
-    text-shadow: 0 0 8px var(--db-orange);
+    border-radius: 5px;
 }
 
-#lbImg {
-    max-width: 90%;
-    max-height: 85%;
-    border-radius: 12px;
-    animation: fadeImg .35s ease;
-    box-shadow: 0 0 25px var(--db-orange);
+/* Hover */
+.hover-btn:hover {
+    background-color: lightblue;
 }
 
-@keyframes fadeImg {
-    from { opacity: 0; transform: scale(.93); }
-    to { opacity: 1; transform: scale(1); }
+/* Focus */
+.focus-btn:focus {
+    background-color: lightgreen;
+    outline: 2px solid green;
 }
 
-/* === FOOTER === */
-footer {
-    text-align: center;
-    padding: 25px;
-    background: #111;
-    color: var(--db-yellow);
-    border-top: 3px solid var(--db-orange);
-    margin-top: 40px;
-    text-shadow: 0 0 6px var(--db-orange);
+/* Active */
+.active-btn:active {
+    background-color: rgb(255, 180, 90);
+    transform: scale(0.95);
+}
+
+/* ACTIVIDAD 2 */
+.lista-actividad2 li:first-child {
+    color: blue;
+    font-weight: bold;
+}
+
+.lista-actividad2 li:last-child {
+    color: red;
+    font-weight: bold;
+}
+
+.lista-actividad2 li:nth-child(3) {
+    background-color: yellow;
+}
+
+/* ACTIVIDAD 3 */
+.parrafo-editorial::first-letter {
+    font-size: 30px;
+    color: tomato;
+    font-weight: bold;
+}
+
+.parrafo-editorial::first-line {
+    color: gray;
+    font-style: italic;
+}
+
+/* ACTIVIDAD 4 */
+.titulo-decorado::before {
+    content: "★ ";
+    color: gold;
+}
+
+.titulo-decorado::after {
+    content: " ★";
+    color: gold;
+}
+
+/* ACTIVIDAD 5 */
+.tarjeta {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.tarjeta-titulo::before {
+    content: "→ ";
+    color: #444;
+}
+
+.tarjeta-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #008cff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.tarjeta-btn:hover {
+    background-color: #006fcc;
+}
+
+.tarjeta-btn:active {
+    transform: scale(0.95);
 }

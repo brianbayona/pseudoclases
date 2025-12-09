@@ -1,0 +1,61 @@
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+header, section {
+    margin-bottom: 30px;
+}
+
+.tarjeta {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.tarjeta-titulo::before {
+    content: "→ ";
+    color: #444;
+}
+
+.tarjeta-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #008cff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.tarjeta-btn:hover {
+    background-color: #006fcc;
+}
+
+.tarjeta-btn:active {
+    transform: scale(0.95);
+}
