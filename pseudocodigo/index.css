@@ -11,7 +11,33 @@ body {
     color: #e2e2e2;
     line-height: 1.6;
 }
+.header-principal p,
+.header-principal h1 {
+    text-align: center;
+}
+.submenu ul {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    gap: 25px;                 /* Espaciado entre enlaces */
+    padding: 0;
+    margin: 20px 0;
+}
 
+.submenu ul li a {
+    text-decoration: none;
+    color: #00c8ff;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.submenu ul li a:hover {
+    background: rgba(0, 200, 255, 0.18);
+}
+section header h1{
+  text-align: center;
+}
 /* ---------------------------------------------------------
    NAVBAR
 --------------------------------------------------------- */
