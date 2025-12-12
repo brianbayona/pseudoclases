@@ -3,52 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Pagina Informativa</title>
+    <title>Mini Página Informativa</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
 
-    <!-- Menú de navegación -->
-    <nav>
+    <!-- -------------------------------------------------------
+         MENÚ PRINCIPAL
+    --------------------------------------------------------- -->
+    <nav class="menu-principal">
         <ul>
-            <li><a href="apropiacion.html">C. Actividades de apropiación del conocimiento</a></li>
+            <li>
+                <a href="apropiacion.html">
+                    C. Actividades de apropiación del conocimiento
+                </a>
+            </li>
         </ul>
     </nav>
 
-    <header>
-        <p>Dale click a la opción de arriba para VER LA PAGINA DE APROPIACION DE CONOCIMIENTO.  </p>
-        <h1>Actividad de transferencia</h1>
+    <!-- -------------------------------------------------------
+         CABECERA PRINCIPAL
+    --------------------------------------------------------- -->
+    <header class="header-principal">
 
-      </header>
+        <p>
+            Dale click a la opción de arriba para VER LA PÁGINA DE APROPIACIÓN DE CONOCIMIENTO.
+        </p>
 
-    <!-- Transferencia -->
-     <header>
-      <h1>Hobby: Videojuegos</h1>
-      <nav>
-        <ul>
-          <li><a href="#general">General</a></li>
-          <li><a href="#juego1">Juego destacado</a></li>
-        </ul>
-      </nav>
-     </header>
+        <h1>
+            Actividad de Transferencia
+        </h1>
 
-     <main>
-      <section id="general">
-          <h2>Sobre los videojuegos</h2>
-          <p>Los videojuegos son una forma de entretenimiento que combina creatividad y tecnología...</p>
-      </section>
+    </header>
 
-      <article id="juego1">
-            <h2>Mi juego favorito</h2>
-            <img src="https://cdn.pixabay.com/photo/2022/07/09/11/37/child-7310716_1280.jpg" alt="fnaf">
-            <p>Me gusta mucho <strong>FNAF</strong> porque combina terror y sensacion.</p>
-            <button>Más información</button>
-        </article>
+    <main>
+
+        <!-- -------------------------------------------------------
+             SECCIÓN HOBBY
+        --------------------------------------------------------- -->
+        <section id="hobby">
+
+            <!-- Título -->
+            <header class="header-hobby">
+
+                <h1>
+                    Hobby: Videojuegos
+                </h1>
+
+                <!-- Submenú -->
+                <nav class="submenu">
+                    <ul>
+                        <li><a href="#general">General</a></li>
+                        <li><a href="#juego1">Juego destacado</a></li>
+                        <li><a href="#imagenes">Imágenes</a></li>
+                    </ul>
+                </nav>
+
+            </header>
+
+            <!-- -------------------------------------------------------
+                 SECCIÓN GENERAL SOBRE VIDEOJUEGOS
+            --------------------------------------------------------- -->
+            <section id="general" class="bloque bloque-camara">
+
+                <h2 class="decorado">
+                    Sobre los videojuegos
+                </h2>
+
+                <p>
+                    Los videojuegos son aplicaciones interactivas de entretenimiento digital donde los usuarios
+                    controlan acciones y personajes dentro de mundos virtuales. Estas experiencias pueden ir desde
+                    simples retos mecánicos hasta profundos desarrollos narrativos llenos de emoción.
+                </p>
+
+                <p>
+                    La industria de los videojuegos es una de las más influyentes a nivel mundial, superando en
+                    ingresos al cine y la música. Entre consolas, PC, móviles y VR, el medio continúa expandiéndose
+                    con nuevas tecnologías.
+                </p>
+
+                <p>
+                    Dentro del género de terror, elementos como la tensión, la vulnerabilidad del jugador,
+                    la oscuridad ambiental y el diseño sonoro juegan un papel crucial. Este tipo de juegos
+                    busca generar sensaciones intensas mediante atmósferas opresivas, amenazas inesperadas
+                    y mecánicas de supervivencia.
+                </p>
+
+                <p>
+                    Subgéneros como el <strong>survival horror</strong> destacan por su uso limitado de recursos,
+                    haciendo que cada acción sea decisiva. Otros, como el <strong>terror psicológico</strong>,
+                    manipulan la percepción del jugador con mensajes ocultos, distorsiones visuales y personajes
+                    inquietantes.
+                </p>
+
+            </section>
+
+            <!-- -------------------------------------------------------
+                 SECCIÓN DEL JUEGO DESTACADO
+            --------------------------------------------------------- -->
+            <section id="juego1" class="bloque bloque-freddy">
+
+                <h2 class="decorado">
+                    Mi juego favorito
+                </h2>
+
+                <!-- Bloque FNAF Sister Location -->
+                <section class="bloque bloque-freddy">
+
+                    <h2 class="titulo-decorado">
+                        Five Nights at Freddy’s: Sister Location
+                    </h2>
+
+                    <div class="flex-2">
+
+                        <!-- Columna Izquierda: Texto -->
+                        <div class="col tarjeta-texto">
+
+                            <p>
+                                Five Nights at Freddy’s: Sister Location es la quinta entrega oficial de la saga creada por
+                                Scott Cawthon. Esta edición se diferencia de las anteriores al introducir nuevas áreas,
+                                mecánicas interactivas y una narrativa mucho más profunda.
+                            </p>
+
+                            <p>
+                                Animatrónicos icónicos como Circus Baby, Ballora, Funtime Freddy y Funtime Foxy forman
+                                parte de este oscuro complejo subterráneo conocido como “Circus Baby’s Entertainment and Rental”.
+                            </p>
+
+                            <p>
+                                El jugador toma el rol de un técnico nocturno encargado de revisar los sistemas, recorrer
+                                zonas peligrosas y completar tareas a riesgo de ser atacado por los animatrónicos.
+                            </p>
+
+                        </div>
+
+                        <!-- Columna Derecha: Imagen -->
+                        <div class="col">
+
+                            <img 
+                                src="https://wallpapers.com/images/high/fnaf-sister-location-1080-x-1920-wallpaper-0dn0bgloaq7eksmu.webp" 
+                                alt="Sister Location Imagen"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- Texto adicional -->
+                <p>
+                    Five Nights at Freddy's (FNaF) se ha convertido en una franquicia de culto por su mezcla 
+                    perfecta entre terror, tensión, misterio y narrativa creciente. La sensación de estar 
+                    constantemente vigilado, acompañado de un ambiente claustrofóbico, lo hace único.
+                </p>
+
+                <p>
+                    Me gusta mucho <strong>FNAF</strong> por su estilo narrativo, la ambientación intensa
+                    y la forma en que cada juego aporta nuevas piezas a una historia enorme y llena de teorías.
+                </p>
+
+                <button class="info-btn">
+                    Más información
+                </button>
+
+            </section>
+
+            <!-- -------------------------------------------------------
+                 SECCIÓN DE IMÁGENES
+            --------------------------------------------------------- -->
+            <section id="imagenes" class="bloque bloque-camara">
+
+                <h2 class="decorado">
+                    Galería de Imágenes
+                </h2>
+
+                <p class="tarjeta-texto">
+                    Algunas imágenes representativas del universo de Five Nights at Freddy’s, incluyendo personajes
+                    icónicos de Sister Location y otras entregas.
+                </p>
+
+                <div class="flex-2">
+                    <div class="col">
+                        <img src="https://wallpapers.com/images/high/fnaf-sister-location-1920-x-1080-wallpaper-9kqcsd4x66oqajz2.webp" alt="Freddy Fazbear">
+                    </div>
+
+                    <div class="col">
+                        <img src="https://cdn.pixabay.com/photo/2022/07/09/11/37/child-7310716_1280.jpg" alt="Circus Baby">
+                    </div>
+                </div>
+
+                <div class="flex-2">
+                    <div class="col">
+                        <img src="https://wallpapers.com/images/high/ballora-2560-x-1440-t38w01omo7usxtsh.webp" alt="Ballora">
+                    </div>
+
+                    <div class="col">
+                        <img src="https://wallpapers.com/images/high/funtime-foxy-3297-x-1800-wallpaper-eupksi4krlwab1yh.webp" alt="Funtime Foxy">
+                    </div>
+                </div>
+
+            </section>
+
+        </section>
+
     </main>
 
+    <!-- -------------------------------------------------------
+         FOOTER
+    --------------------------------------------------------- -->
     <footer>
-        <p>©Brian Bayona [Programación de software]</p>
+        <p>
+            © Brian Bayona — Programación de Software
+        </p>
     </footer>
-     </main>
+
 </body>
 </html>
