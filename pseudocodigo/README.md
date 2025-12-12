@@ -4,7 +4,7 @@
 Este proyecto hace parte de la Actividad de Transferencia del curso.  
 La temática que elegí fue mi hobby: los videojuegos, específicamente Five Nights at Freddy’s (FNAF).
 
-### ENLACE DEL REPOSITORIO
+### ENLACE DEL REPOSITORIO WEB
 link:
 
 ### ENLACE DE LA PAGINA WEB PUBLICADA
