@@ -5,10 +5,10 @@ Este proyecto hace parte de la Actividad de Transferencia del curso.
 La temática que elegí fue mi hobby: los videojuegos, específicamente Five Nights at Freddy’s (FNAF).
 
 ### ENLACE DEL REPOSITORIO WEB
-link:
+link: https://github.com/brianbayona/pseudoclases.git 
 
 ### ENLACE DE LA PAGINA WEB PUBLICADA
-link:
+link: https://brianbayona.github.io/pseudoclases/
 
 ### ¿Qué contiene la página?
 - Estructura HTML semántica completa (header, main, section, article y footer).
